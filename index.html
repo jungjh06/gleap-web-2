@@ -1,0 +1,295 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About GLEAP - SNU College of Natural Sciences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Noto+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e8e8ea",
+                        "surface-dim": "#dadadc",
+                        "primary": "#00244b",
+                        "secondary-fixed": "#b7eaff",
+                        "on-primary-container": "#7ea5e3",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f3f3f6",
+                        "on-secondary-fixed": "#001f28",
+                        "secondary": "#00677f",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "on-background": "#1a1c1e",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9fc",
+                        "background": "#f9f9fc",
+                        "on-secondary-fixed-variant": "#004e60",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#434750",
+                        "primary-fixed": "#d5e3ff",
+                        "tertiary-fixed-dim": "#5cd5f8",
+                        "tertiary-fixed": "#b3ebff",
+                        "surface-container-highest": "#e2e2e5",
+                        "tertiary": "#002933",
+                        "outline": "#737781",
+                        "on-tertiary-fixed": "#001f27",
+                        "tertiary-container": "#00404e",
+                        "on-primary-fixed": "#001c3b",
+                        "on-secondary-container": "#005266",
+                        "secondary-container": "#00ccf9",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f0f0f3",
+                        "secondary-fixed-dim": "#4cd6ff",
+                        "on-tertiary-container": "#2bb2d3",
+                        "on-surface": "#1a1c1e",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c3c6d1",
+                        "surface-variant": "#e2e2e5",
+                        "inverse-surface": "#2f3133",
+                        "primary-container": "#003a71",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eeeef0",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9fc",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "on-primary-fixed-variant": "#18477f",
+                        "surface-tint": "#355f98",
+                        "inverse-primary": "#a7c8ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "body-md": ["Noto Sans"],
+                        "body-lg": ["Noto Sans"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "label-sm": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .scientific-grid {
+            background-size: 32px 32px;
+            background-image: radial-gradient(circle, #e2e2e5 1px, transparent 1px);
+        }
+        .scientific-shadow {
+            box-shadow: 0 4px 40px rgba(0, 36, 75, 0.04);
+        }
+        .node-bullet {
+            position: relative;
+            padding-left: 24px;
+        }
+        .node-bullet::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #00677f;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto bg-surface/80 backdrop-blur-md dark:bg-surface-dim/80 shadow-sm dark:shadow-none transition-all duration-300">
+<div class="flex items-center gap-4">
+<img alt="GLEAP Logo" class="h-10 w-auto" data-alt="GLEAP main logo representing the Global Leadership Program." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsZqS_enoAtvV_GyqzwTMCxcpH5GXfJLfIbjZLh_kzhLJOIeXTOmwY-TAbNy14lhXUf_S7Mnzj11cXwaO88d_4thAUm5OF9Q1xW3cgqejyJwN9jACJZ5DHVsj36fW00N8VQptAqiX_5GvX5pRmdbWDQXIN3qwURdjvLAhIhX5QFJ1CXC9ZCtWHTlf6OIO2N1HyAPeUua2tYfT1oXjLWmruu8sCnpvoZrZ0nMUVRQOXlimoNnmCvG_XDArROIB0o25Jwgg">
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Home</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-sm text-label-sm" href="#">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Activities</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Member News</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-DEFAULT font-label-sm text-label-sm hover:bg-primary-container transition-colors">
+            Join Us
+        </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Main Content -->
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern building of Seoul National University College of Natural Sciences under a clear blue sky, surrounded by autumn trees. High quality, architectural photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDENa03sC4peEvzI7KW973TDeh1Xc2bbG2N3dz9ACgWvIXHU_ng20eSlnOHygtYBjXSeiReD3YkWi_LOUG-B9l-qTEMw5M-t_4qaDpUJJ8K95a1DxiH33k9zEOBr3bqSnpyPt7l3WbrQJ2UoaAqNEY4Q7VUoIT-i73o3072jy-TeAX3JWP46nJB8FkD7r5IvfLGOlieWzVumwKUNUDXKlJFqBddSatITIJAnB5CGVOG9HA6gjzltZDpszzZHrzGyQSqqGU')"></div>
+<div class="absolute inset-0 bg-primary/80 backdrop-blur-sm mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col items-center">
+<img alt="GLEAP Emblem" class="w-32 md:w-48 mb-8 filter brightness-0 invert opacity-90" data-alt="GLEAP circular emblem logo with lightbulb motif, reading 'Connect Science, Illuminate World'." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC10uucEzJB5OV-Y9HSyt5o3ugoydyH72ZVJQZ0DYLeq9VN_OQhCz55mqeARxQC1dXP91njxMxa_1PlGjcG-Jv4WiUs86Td7vrVawmrWvjxtdc3-LCtjcD8df4zt-fpebzu3Nbw4_8ftlRiEDUhUe1LtJ6-Cov2_KUcTWFy9mSzLdIdzyxpe82sXb-Im6wAaTLIxGSA13rVgINw59IHPTIH_oXHwNgsNLJWwtpY_ds57MU_kzMRzG1s7rufEF3msKxXjzbDCN1m1evXDEg">
+<span class="font-label-sm text-label-sm text-secondary-fixed tracking-widest uppercase mb-4 block">[ OFFICIAL SNU ORGANIZATION ]</span>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-6">Connect Science,<br>Illuminate World</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed max-w-2xl mx-auto opacity-90">
+                    The Global Leadership Program at Seoul National University College of Natural Sciences. Nurturing the next generation of scientific pioneers.
+                </p>
+</div>
+</section>
+<!-- Organization Overview & Stats -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface scientific-grid relative">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-7 pr-0 md:pr-12">
+<span class="font-label-sm text-label-sm text-secondary mb-4 block">[ ABOUT GLEAP ]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Empowering Scientific Leadership</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md">
+<p class="">
+                            GLEAP (Global Leadership Program) is the official student honors organization of the College of Natural Sciences at Seoul National University. Founded with the mission to bridge the gap between rigorous scientific research and broader societal impact, we cultivate leaders who can communicate complex ideas and drive innovation.
+                        </p>
+<p class="">
+                            Our members are selected from the brightest minds across the college, engaging in interdisciplinary projects, academic seminars, and extensive community outreach programs. We believe that true scientific advancement requires not just lab work, but collaboration, ethical grounding, and global perspective.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-6 mt-12 md:mt-0">
+<!-- Key Stats Bento -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-surface-variant scientific-shadow hover:shadow-lg transition-shadow">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">2026 Overview</h3>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="block font-display-lg text-secondary">14</span>
+<span class="font-label-sm text-on-surface-variant">Years of Excellence</span>
+</div>
+<div class="space-y-4">
+<div class="border-b border-surface-variant pb-2">
+<span class="block font-label-sm text-secondary">14TH GEN</span>
+<span class="font-headline-md text-primary">10 Members</span>
+</div>
+<div>
+<span class="block font-label-sm text-secondary">15TH GEN</span>
+<span class="font-headline-md text-primary">10 Members</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Pillars -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm text-secondary mb-4 block">[ OUR PILLARS ]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Foundations of Excellence</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-8 border-t-2 border-secondary rounded-b-lg scientific-shadow hover:-translate-y-2 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block" style="font-variation-settings: 'FILL' 0;">public</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Social Contribution</h3>
+<p class="font-label-sm text-on-surface-variant mb-4">(사회공헌)</p>
+<p class="font-body-md text-on-surface-variant">Applying scientific knowledge to solve community problems through educational outreach, volunteering, and public science communication initiatives.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-8 border-t-2 border-secondary rounded-b-lg scientific-shadow hover:-translate-y-2 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block" style="font-variation-settings: 'FILL' 0;">science</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Academic</h3>
+<p class="font-label-sm text-on-surface-variant mb-4">(학술)</p>
+<p class="font-body-md text-on-surface-variant">Fostering interdisciplinary research through internal seminars, paper reviews, and collaborative projects that push the boundaries of natural sciences.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-8 border-t-2 border-secondary rounded-b-lg scientific-shadow hover:-translate-y-2 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block" style="font-variation-settings: 'FILL' 0;">hub</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Networking</h3>
+<p class="font-label-sm text-on-surface-variant mb-4">(교류)</p>
+<p class="font-body-md text-on-surface-variant">Building strong connections within the SNU community and with external scientific organizations, alumni, and global research partners.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Activity Showcase -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="font-label-sm text-label-sm text-secondary mb-4 block">[ SHOWCASE ]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Latest Activities</h2>
+</div>
+<button class="hidden md:flex items-center gap-2 text-secondary font-label-sm hover:text-primary transition-colors">
+                        View All Gallery <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Featured Large Image -->
+<div class="md:col-span-8 relative h-96 group overflow-hidden rounded-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A large group of diverse university students in a modern science laboratory, actively engaging in a hands-on chemistry experiment. Bright, professional academic setting with blue accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGNtOfiLltMG7hGNDFAqtLsFMjwSn-Uw54yoeyi05Jw2QsqbW927mKl0QuX95KtUvcUPQQSmM-YRu-TmMxdXOBS9rGdTcSuT3e9K4nMeNStNLWdEqA4pGtuqOVUIU2Lt4DbCat6B2e8bbqbL44s9_OIzIRiVwmUMuDIC2XQlCKwEm_bniBnblyIuY-EAsQLRWyC02QoVGiiYafAisDeUAmrIk-kntpZOXvZ7-Rq7MBOkcqKYLghfkThQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="inline-block px-3 py-1 bg-secondary text-on-secondary font-label-sm text-[10px] mb-3">[ ACADEMIC SEMINAR ]</span>
+<h3 class="font-headline-md text-on-primary">2026 Spring Interdisciplinary Symposium</h3>
+</div>
+</div>
+<!-- Side Small Images -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="relative h-44 group overflow-hidden rounded-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="University students volunteering at a local community center, teaching young children about basic physics concepts using interactive toys. Warm, engaging atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcVHZLjTOqueX29dBxWJ0Om6BHxncQ8ZIv-kHVbe-RYp3ggg0y1Azuk0qVHn4avNuAjSY6MI28KtqmB2ON230AGFysoAZgHz9F3bNEcDhUnHmOJBmzZZctBwhaHPcvk7mScFtFqSXgF0mwvE9I-f83QHNN-bZOMLUCyOrHv_XVI2ii4X8QV5hYVdEPNdle9qkKYBHBd-V57dKJ_6HLQvAcF2QgQrUqNjxHbppKKQarRqzUwCJ-qD7Tpw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="inline-block px-2 py-1 bg-surface/20 text-on-primary border border-on-primary/30 font-label-sm text-[10px] mb-2">[ OUTREACH ]</span>
+<h4 class="font-body-md text-on-primary font-semibold">Youth Science Camp</h4>
+</div>
+</div>
+<div class="relative flex-1 group overflow-hidden rounded-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A networking event in a modern, well-lit university hall. Students and professors are mingling, discussing posters, and holding coffee cups. Professional academic networking scene." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAYdfphZdKgLJk1XXZQ6u_7ki9HhCw2XfS98leRZ7E5HQ3XW7vtKeogeRyw5F8_LZ4Hmpwjk-9ioYzrr0aW-F9oqlwhfqQg8shdUVf6wgqSXUdVezpLE1fhVExNDCzj-TiRFycFC96rP-OMM1_q9XBwBG_gu-eo8Q4zqMOFOZOdXPJEkucxElZN80bR7hEZdpA3_qrRpzv40L61EhP4wFtJJ9MXqhqyfVzgZ1cCs2ubBwRieJkkbdYtQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="inline-block px-2 py-1 bg-surface/20 text-on-primary border border-on-primary/30 font-label-sm text-[10px] mb-2">[ NETWORKING ]</span>
+<h4 class="font-body-md text-on-primary font-semibold">Alumni Mentorship Night</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-gutter max-w-container-max mx-auto bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-sm">
+<span class="font-headline-md text-headline-md font-extrabold text-primary mb-4 block">GLEAP</span>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Global Leadership Program<br>SNU College of Natural Sciences</p>
+<p class="font-label-sm text-label-sm text-outline">© 2024 GLEAP SNU College of Natural Sciences. All Rights Reserved.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="#">Contact Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="#">SNU Home</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors underline-offset-4 hover:underline" href="#">Member Login</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
